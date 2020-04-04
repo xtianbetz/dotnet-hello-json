@@ -50,16 +50,16 @@ dotnet-hello-json"
 
 ### Cross-platform builds using msbuild
 
-You can use msbuild and target the 'net48' framework and you will get a single
-directory with a familiar .exe file. You will have to run this using "mono"
-using the recommended shell-script wrapper technique.
+You can use msbuild (included with mono) and target 'net48' (.NET Framework
+4.8). The result will be a familiar .exe file.
 
 ```
 msbuild -restore -p:TargetFramework=net48
 msbuild -restore -p:Configuration=Release -p:TargetFramework=net48
 ```
 
-You can now run the release build using mono:
+You can now run the release build using mono and the recommended shell-script
+wrapper technique.
 
 ```
 tar -C bin/Release/net48/ -cvzf /tmp/clr-dotnet-hello-json.tgz .
@@ -70,6 +70,9 @@ ssh pi 'echo -en "#!/bin/sh\n/usr/bin/mono /usr/libexec/clr-dotnet-hello-json/do
 ssh pi chmod +x /usr/bin/clr-dotnet-hello-json
 ssh pi clr-dotnet-hello-json
 ```
+
+There does not appear to be any way to target the .NET Framework (i.e. not .NET
+Core) without using mono's msbuild.
 
 TODO: this repo has yet been tested with any native libraries which may require
 multiple native .so files for different architectures. PRs are welcome.
@@ -114,6 +117,8 @@ Newtonsoft.JSON object deserialization example you can find
   system?](https://github.com/dotnet/core/issues/2186)
 * Deserialize an Object with Newtonsoft.JSON: [Deserialize an
   Object](https://www.newtonsoft.com/json/help/html/DeserializeObject.htm)
+* [Installing Mono on
+  CentOS](https://www.mono-project.com/download/stable/#download-lin-centos)
 * [Running Mono
   Applications](https://www.mono-project.com/archived/guiderunning_mono_applications/)
 
