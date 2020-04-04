@@ -71,8 +71,9 @@ ssh pi chmod +x /usr/bin/clr-dotnet-hello-json
 ssh pi clr-dotnet-hello-json
 ```
 
-There does not appear to be any way to target the .NET Framework (i.e. not .NET
-Core) without using mono's msbuild.
+There does not appear to be a way target the .NET Framework using the 'dotnet'
+CLI tool on Linux. In other words: you cannot use 'dotnet build' and friends to
+target .NET Framework and run on mono.
 
 TODO: this repo has yet been tested with any native libraries which may require
 multiple native .so files for different architectures. PRs are welcome.
