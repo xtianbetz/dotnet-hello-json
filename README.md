@@ -4,7 +4,7 @@
 
 This repo is a simple demo application built with dotnet that processes JSON. It
 was made to help me learn, understand, and teach using dotnet build tools on
-Linux without using any proprietary visual studio tools.
+Linux without using any GUI or Visual Studio tools.
 
 The instructions below were tested on a CentOS 7.7 build host and a Raspberry
 Pi 4 running Yocto version 3.0.
