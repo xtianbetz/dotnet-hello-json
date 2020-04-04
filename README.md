@@ -100,6 +100,8 @@ Newtonsoft.JSON object deserialization example you can find
 ## Resources
 * [Official .NET guide](https://docs.microsoft.com/en-us/dotnet/standard/)
   Required reading. Just do it!
+* [Essential MSBuild: A Build Engine Overview for for .NET
+  Tooling](https://docs.microsoft.com/en-us/archive/msdn-magazine/2017/january/essential-net-essential-msbuild-a-build-engine-overview-for-net-tooling)
 * All about Target frameworks [Target
   Frameworks](https://docs.microsoft.com/en-us/nuget/reference/target-frameworks)
 * SDK-style project definitions [Moving to SDK-Style projects and package
