@@ -2,10 +2,12 @@
 
 ## Overview
 
-This repo is a simple demo application built with dotnet that processes JSON
-using Newtonsoft.JSON obtained from Nuget. It was made to help me learn,
-understand, and teach using dotnet build tools on Linux without using any
-visual studio tools.
+This repo is a simple demo application built with dotnet that processes JSON. It
+was made to help me learn, understand, and teach using dotnet build tools on
+Linux without using any proprietary visual studio tools.
+
+The instructions below were tested on a CentOS 7.7 build host and a Raspberry
+Pi 4 running Yocto version 3.0.
 
 ## Building and Running In Various Ways
 
@@ -49,7 +51,6 @@ dotnet-hello-json"
 ## How this repo was made
 
 ```
-sudo yum install dotnet-sdk-3.1 unix2dos
 mkdir dotnet-hello-json
 cd dotnet-hello-json/
 dotnet new console
